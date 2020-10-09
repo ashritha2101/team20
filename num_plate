@@ -56,3 +56,11 @@ language='en'
 output=gTTS(text=mytext,lang=language)
 output.save("numberplate.mp3")
 os.system("start numberplate.mp3")
+import webbrowser
+pip install selenium
+from selenium import webdriver
+from selenium import webdriver
+browser=webdriver.Chrome(r"C:\Users\Admin\Downloads\chromedriver_win32\chromedriver")
+browser.get('https://vahan.nic.in/nrservices/faces/user/searchstatus.xhtml')
+searchBar=browswer.find_element_by_id('regn_no1_exact')
+searchBar.send_key(text)
